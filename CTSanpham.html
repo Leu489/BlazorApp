@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sản Phẩm</title>
+	<link rel="stylesheet" href="Trangchu.css" type="text/css">
+	<link rel="stylesheet" href="Sanpham.css" type="text/css">
+	<script>
+		var sothutu = 1;
+		showSlides(sothutu);
+
+		function plusSlides(n) {
+			showSlides(sothutu += n);
+		}
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlide");
+			if (n > slides.length) { sothutu = 1 }
+			if (n < 1) { sothutu = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[sothutu - 1].style.display = "block";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="bar-content">
+			<div class="header-top">
+				<div class="bar-left">
+					<ul>
+						<li><a href="#">CỬA HÀNG</a></li>
+						<li><a href="#">GIỎ HÀNG</a></li>
+						<li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+					</ul>
+				</div>
+				<div class="bar-right">
+					<div class="bar-addres">
+						<img src="Icon/iconmap.png" alt="icon map" width="16px">
+						<span><a href="#">319 C16, LÝ THƯỜNG KIỆT, Q.11</a></span>
+					</div>
+					<div class="bar-phone">
+						<img src="Icon/iconphone.png" alt="icon phone" width="18px">
+						<span><a href="#">1900 636 648</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content">
+			<div class="header-bot">
+				<div class="logo">
+					<a href="Trangchu.html"><img class="img-logo" src="Images/logo-mona.png" alt="logo"
+							width="130px"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+						<li><a class="active" href="Sanpham.html">SẢN PHẨM</a></li>
+						<li><a href="Tintuc.html">TIN TỨC</a></li>
+						<li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+						<li><a href="Lienhe.html">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				<div class="login">
+					<a href="Dangnhap.html">ĐĂNG NHẬP</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ctlp-container">
+		<div class="ctlp-main">
+			<div class="ctlp-row1">
+				<div class="ctlprow1-text">
+					<a href="Trangchu.html">trang chủ</a>
+					<span class="gach_ngang">/</span>
+					<a href="Sanpham.html">sản phẩm</a>
+					<span class="gach_ngang">/</span>
+					<a href="CTSanpham.html">BÀN LÀM VIỆC SANG TRỌNG</a>
+				</div>
+				<div class="ctlprow1-next">
+					<div class="button-next">
+						<a href="CTSanpham.html">&#10095;</a>
+					</div>
+					<div class="ctlphover-img">
+						<img src="Images/bst3.jpg" height="75px" width="75px" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="ctlp-row2">
+				<div class="ctlprow2-left">
+					<div class="ctlprow2-img">
+						<div class="mySlide" style="display: block;">
+							<img src="Images/ban_1.jpg" width="685px" alt="358px">
+						</div>
+						<div class="mySlide">
+							<img src="Images/ban_2.jpg" width="685px" height="358px" alt="">
+						</div>
+						<div class="mySlide">
+							<img src="Images/ban_3.jpg" width="685px" height="358px" alt="">
+						</div>
+						<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onClick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<div class="ctlprow2-right">
+					<div class="ctlprow2-main">
+						<h1>BÀN LÀM VIỆC SANG TRỌNG</h1>
+						<div class="divider big"></div>
+						<div class="price-block font-size">
+							<p>
+								<span>4,500,000 <u> đ</u></span>
+							</p>
+						</div>
+						<div class="description">
+							<ul>
+								<li> 1 bàn trắng</li>
+								<li> 1 ghế trắng</li>
+								<li> 1 kệ để đồ</li>
+								<li> Mặt bàn dài 1,5m</li>
+							</ul>
+						</div>
+						<button class="button-book"><a href="Dangnhap.html">đặt ngay</a></button>
+						<div class="category">
+							Danh mục:
+							<a href="#">Sang trọng,</a>
+							<a href="#">tiện nghi,</a>
+							<a href="#">bền đẹp,</a>
+							<a href="Sanpham.html">Sản phẩm</a>
+						</div>
+						<div class="category">
+							Tag:
+							<a href="#">Bàn ghế</a>
+						</div>
+						<div class="ctlprow2-social">
+							<img src="Icon/facebook.png" height="50px" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ctlp-row3">
+				<div class="ctlprow3-block">
+					<button value="mota" class="dropbtn">
+						<img src="Icon/muitenxuong.PNG" height="20px" alt="">
+						<span>Mô tả</span>
+					</button>
+					<div id="mota" class="ctlpblock-text">
+						<strong>Sản phẩm gia dụng tại National Direct</strong>
+						– Bàn ghế làm việc với màu trắng của sự sang trọng và thiết kế hiện đại rất thích hợp tạo không
+						gian làm việc thoải mái
+					</div>
+					<button value="bosung" class="dropbtn">
+						<img src="Icon/muitenxuong.PNG" height="20px" alt="">
+						<span>Thông tin bổ sung</span>
+					</button>
+					<div id="bosung" class="ctlpblock-text height">
+						<div class="text-row">
+							<div class="text-col1">
+								<h4>Chất liệu</h4>
+							</div>
+							<div class="text-col2"><span>Gỗ</span></div>
+						</div>
+						<div class="text-row">
+							<div class="text-col1">
+								<h4>Kích thước</h4>
+							</div>
+							<div class="text-col2"><span>1,5m x 0,4m x 0,6m</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ctlp-row4">
+				<div class="ctlprow4-title">
+					<h3>Sản phẩm tương tự</h3>
+				</div>
+				<div class="ctlprow4-product">
+					<div class="col3-main">
+						<div class="col3-block margin-right">
+							<div class="col3-img">
+								<img src="Images/ban_2.jpg" width="340px" height="180px;" alt="phong">
+							</div>
+							<div class="col3-text">
+								<div class="title-block">
+									<a href="Sanpham.html"> BÀN LÀM VIỆC KÉO TIỆN ÍCH </a>
+								</div>
+								<div class="price-block">
+									<span>3,500,000 <u> đ</u></span>
+								</div>
+							</div>
+						</div>
+						<div class="col3-block margin-right">
+							<div class="col3-img">
+								<img src="Images/ban_3.jpg" width="340px" height="180px" alt="phong">
+							</div>
+							<div class="col3-text">
+								<div class="title-block">
+									<a href="Sanpham.html"> BÀN LÀM VIỆC VĂN PHÒNG </a>
+								</div>
+								<div class="price-block">
+									<span>5,550,000 <u> đ</u></span>
+								</div>
+							</div>
+						</div>
+						<div class="col3-block">
+							<div class="col3-img">
+								<img src="Images/sofa_1.jpg" width="340px" height="180px" alt="phong">
+							</div>
+							<div class="col3-text">
+								<div class="title-block">
+									<a href="Sanpham.html"> GHẾ SOFA XÁM NHẠT SANG TRỌNG </a>
+								</div>
+								<div class="price-block">
+									<span>7,550,000 <u> đ</u></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-row1">
+			<div class="row1-main">
+				<div class="footer-col">
+					<div class="col-title">
+						<h3>CỬA HÀNG NATIONAL DIRECT</h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconmap.png" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>319 C16 Lý Thường Kiệt, Q.11, HCM</p>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconphone.PNG" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>0123 123 4444</p>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconmail.png" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>nationaldirect@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-text social">
+							<img src="Icon/social.PNG" height="50px" width="180px" alt="anh mang xa hoi">
+						</div>
+						<div class="col-img">
+							<img src="Images/footer-map-world.png" width="270px" alt="map">
+						</div>
+	
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title">
+						<h3> LIÊN KẾT TRANG WEB </h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Tổng quan về cửa hàng National Direct</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Các mẫu sản phẩm chất lượng</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Tìm kiếm không gian sang trọng tại National Direct</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title">
+						<h3> SẢN PHẨM </h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; SANG TRỌNG</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; TIỆN NGHI</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; GIA ĐÌNH</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; BỀN ĐẸP</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title padding">
+						<h3> BỘ SƯU TẬP </h3>
+					</div>
+					<div class="col-content">
+						<div class="footer-img">
+							<img src="Images/ban_1.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst1.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst2.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst3.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bs4.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst5.jpg" height="64px" width="64px" alt="anh">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-row2">
+			<div class="row2-main">
+				<span>Copyright © 2022 National Direct.</span>
+			</div>
+		</div>
+	</div>
+
+</html>

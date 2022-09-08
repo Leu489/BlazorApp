@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lhcontainer {
+	height: 800px;
+}
+
+.lhmain {
+	height: inherit;
+	width: 1200px;
+	margin: auto;
+}
+
+.lhleft {
+	height: 100%;
+	width: 650px;
+	padding: 25px;
+	float: left;
+}
+
+.lhright {
+	height: 100%;
+	width: 550px;
+	padding: 25px;
+	float: left;
+}
+
+.lhtop {
+	height: 200px;
+	width: 100%;
+	font-weight: bold;
+}
+
+.lhlogo {
+	float: left;
+	height: 100%;
+	padding: 60px 15px;
+}
+
+.lhtext {
+	height: 100%;
+	float: left;
+	width: 286px;
+	padding: 10px;
+}
+
+.lhtext p{
+	margin: 10px 0px;
+	font-size: 18px;
+	color: #666666;
+}
+
+.lhtext a {
+	color: #666666;
+}
+
+.lhtext a:hover {
+	color: #000000;
+}
+
+.lhbot {
+	width: 100%;
+}
+
+.lhtitle {
+	width: 100%;
+	text-align: center;
+	padding: 5px 0px;
+	color: #828282;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+.lhform {
+	padding: 15px 10px;
+}
+
+.lhform textarea,.lhform input[type="text"] {
+    border: 1px solid #ddd;
+	padding: 0px 5px;
+    height: 50px;
+	width: 200px;
+    vertical-align: middle;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	margin: 15px;
+	outline: none;
+	border-radius: 3px;
+	font-size: 17px;
+}
+
+.lhform textarea {
+	height: 100px;
+	width: 440px;
+}
+
+.lhform input[type="submit"]
+{
+	margin: 15px;
+	padding: 10px 30px;
+	background-color: #bca474;
+	border-radius: 2px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1) inset;
+    color: #fff;
+	border: none;
+	font-weight: 100;
+	font-size: 17px;
+}
+
+
+
+

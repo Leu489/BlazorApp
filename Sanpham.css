@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ctlp-container {
+	height: 1560px;
+	width: 100%;
+	background-color: white;
+}
+
+.ctlp-main{
+	height: 1560px;
+	width: 1200px;
+	margin: auto;
+}
+
+.ctlp-row1 {
+	height: 100px;
+	width: 1200px;
+	padding-top: 50px;
+	margin-bottom: 15px;
+}
+
+.ctlprow1-text {
+	height: 50px;
+	width: 1150px;
+	text-transform: uppercase;
+	float: left;
+	padding: 10px 0px;
+}
+
+.ctlprow1-text a {
+	color: rgba(102,102,102,0.7);
+	font-size: 20px;
+	letter-spacing: normal;
+	line-height: 1.6;
+}
+
+.ctlprow1-text a:hover {
+	color: #000000;
+}
+
+.ctlprow1-next {
+	height: 50px;
+	width: 50px;
+	float: left;
+	padding: 5px;
+}
+
+.ctlprow1-next .button-next {
+	height: 40px; 
+	width: 40px;
+	border: 2px solid #C0C0C0;
+	border-radius: 50%;
+	text-align: center;
+	padding: 4px 0px;
+	cursor: pointer;
+}
+
+.button-next a {
+	font-size: 20px;
+	color: #C0C0C0;
+}
+
+.button-next:hover {
+	background-color: #BCA474;
+}
+
+.button-next:hover a {
+	color: white;
+}
+
+.ctlphover-img {
+	background-color: white;
+	height: 80px;
+	width: 80px;
+	display: none;
+	position: relative;
+	left: -20px;
+	border: 1px solid #C0C0C0;
+	padding: 1.5px;
+}
+
+.ctlprow1-next:hover .ctlphover-img  {
+	display: block;
+}
+
+.ctlp-row2 {
+	height: 610px;
+	width: 1200px;
+	padding-bottom: 50px;
+}
+
+.ctlprow2-left {
+	height: 380px;
+	width: 700px;
+	padding: 15px 15px 0px 0px;
+	float: left;
+
+}
+
+.ctlprow2-img {
+	width: 100%;
+	height: 360px;
+	position: relative;
+}
+
+.mySlide {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -45px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0px 9px 9px 0px;
+}
+
+.next {
+	right: 0px;
+	border-radius: 9px 0px 0px 9px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.ctlprow2-right {
+	height: 555px;
+	width: 500px;
+	float: left;
+	padding: 15px;
+}
+
+.ctlprow2-main {
+	width: 100%;
+	height: 525px;
+}
+
+.ctlprow2-main h1 {
+	color: #828282;
+}
+
+.big {
+	margin: 20px 0px;
+	height: 3px;
+}		
+
+.font-size{
+	font-size: 30px;	
+}
+
+.description {
+	height: 140px;
+	width: 100%;
+	color: #666666;
+	padding: 5px 0px 0px 25px;
+}
+
+.description ul li {
+	font-size: 20px;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.button-book {
+	height: 50px;
+	width: 150px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: #e30050;
+	border: 1px solid #e30050;
+	font-weight: bolder;
+	color: #ffffff;
+	font-size: 20px;
+	margin: 10px;
+	cursor: pointer;
+	padding: 0px 20px;
+}
+
+.button-book:hover {
+	background-color: #428BCA;
+	border: 1px solid #428BCA;
+}
+
+.category {
+	height: 30px;
+	padding: 6px;
+	border-top: 1px dotted #ddd;
+	color: #666666;
+	font-size: 15px;
+}
+
+.category a {
+	color: #666666;
+}
+
+
+.ctlprow2-social {
+	height: 70px;
+	padding: 10px;
+}
+
+
+.ctlp-row3 {
+	height: 400px;
+	width: 1200px;
+}
+
+.show {
+	display: none !important;
+}
+
+.ctlprow3-block {
+	background-color: blue;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid #ddd
+}
+
+.dropbtn {
+	height: 50px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	background-color: #F7F7F7;
+}
+
+.dropbtn img {
+	position: relative;
+	top: 4px;
+}
+
+.dropbtn span {
+	color: #666666;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.ctlpblock-text {
+	height: 120px;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 20px 80px 20px 50px;
+	color: #666666;
+	font-size: 20px;
+	line-height: 1.6;
+	display: block;
+}
+	
+.text-row {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ececec;
+}
+
+.text-col1 {
+	width: 50%;
+	height: 50px;
+	float: left;
+	padding: 8px;
+	text-transform: uppercase;
+}
+
+.text-col2 {
+	width: 50%;
+	height: 50px;
+	float: left;
+	padding: 10px;
+}
+
+.height {
+	height: 145px;
+}
+
+.ctlp-row4 {
+	height: 380px;
+	width: 1200px;
+}
+
+.ctlprow4-title {
+	padding: 20px 0px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #828282;
+	line-height: 1.2;
+}
+
+.ctlprow4-product {
+	padding-left: 30px;
+}
+
+
+
+.unshow {
+	display: none;
+}

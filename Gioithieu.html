@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Giới thiệu</title>
+	<link rel="stylesheet" href="Trangchu.css" type="text/css">
+	<link rel="stylesheet" href="Gioithieu.css" type="text/css">
+	<script>
+		var sothutu = 1;
+		showSlides(sothutu);
+
+		function plusSlides(n) {
+			showSlides(sothutu += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(sothutu = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlide");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) { sothutu = 1 }
+			if (n < 1) { sothutu = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active1", "");
+			}
+			slides[sothutu - 1].style.display = "block";
+			dots[sothutu - 1].className += " active1";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="bar-content">
+			<div class="header-top">
+				<div class="bar-left">
+					<ul>
+						<li><a href="#">CỬA HÀNG</a></li>
+						<li><a href="#">GIỎ HÀNG</a></li>
+						<li><a class="bar-active" href="Gioithieu.html">GIỚI THIỆU</a></li>
+					</ul>
+				</div>
+				<div class="bar-right">
+					<div class="bar-addres">
+						<img src="Icon/iconmap.png" alt="icon map" width="16px">
+						<span><a href="#">319 C16, LÝ THƯỜNG KIỆT, Q.11</a></span>
+					</div>
+					<div class="bar-phone">
+						<img src="Icon/iconphone.png" alt="icon phone" width="18px">
+						<span><a href="#">1900 636 648</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content">
+			<div class="header-bot">
+				<div class="logo">
+					<a href="Trangchu.html"><img class="img-logo" src="Images/logo-mona.png" alt="logo"
+							width="130px"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="Trangchu.html">TRANG CHỦ</a></li>
+						<li><a href="Sanpham.html">SẢN PHẨM</a></li>
+						<li><a href="Tintuc.html">TIN TỨC</a></li>
+						<li><a class="active" href="Gioithieu.html">GIỚI THIỆU</a></li>
+						<li><a href="Lienhe.html">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				<div class="login">
+					<a href="Dangnhap.html">ĐĂNG NHẬP</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gt-banner">
+		<div class="gt-banner-content">
+			<div class="gt-banner-img">
+				<img src="Images/page-title-background.jpg" alt="">
+				<div class="gt-banner-block">
+					<div class="gt-banner-title">
+						<h1>GIỚI THIỆU</h1>
+					</div>
+					<div class="gt-banner-text">
+						<a href="Trangchu.html">Trang chủ </a>
+						<span class="gach_ngang"> / </span>
+						Giới thiệu
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gap"></div>
+	<div class="gt-container">
+		<div class="gt-content">
+			<div class="gt-row1">
+				<div class="gtrow1-block block-border">
+					<div class="gt-title-block">
+						<h3>MỤC TIÊU</h3>
+					</div>
+					<div class="gt-text-block">
+						<p>Cung cấp những sản phẩm chất lượng tốt nhất tới khách hàng, mang tới trải nghiệm tuyệt vời
+							nhất.</p>
+					</div>
+				</div>
+				<div class="gtrow1-block block-border">
+					<div class="gt-title-block">
+						<h3>SỨ MỆNH</h3>
+					</div>
+					<div class="gt-text-block">
+						<p>Chú trọng phát triển mọi mặt; cả về chất lượng dịch vụ; cơ sở vật chất và chất lượng nhân
+							sự, hướng tới một dịch vụ tốt nhất cho khách hàng.</p>
+					</div>
+				</div>
+				<div class="gtrow1-block">
+					<div class="gt-title-block">
+						<h3>TƯƠNG LAI</h3>
+					</div>
+					<div class="gt-text-block">
+						<p>Tự động cập nhật tình trạng của mẫu mã sắp được cập bến kho, chọn lọc cho phù hợp nhất cho
+							từng khách hàng qua từng sản phầm mà khách hàng đã mua.</p>
+					</div>
+				</div>
+			</div>
+			<div class="gt-row2">
+				<div class="gt-slideshow">
+					<div class="mySlide" style="display: block;">
+						<img src="Images/cu-lao-cham.jpg" width="1100px" height="550px;" alt="">
+					</div>
+					<div class="mySlide">
+						<img src="Images/tuk.jpg" width="1100px" height="550px;" alt="">
+					</div>
+					<div class="mySlide">
+						<img src="Images/lang-hoa.jpg" width="1100px" height="550px;" alt="">
+					</div>
+					<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onClick="plusSlides(1)">&#10095;</a>
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+			</div>
+			<div class="khoang_cach"></div>
+		</div>
+	</div>
+	<div class="gap"></div>
+	<div class="footer">
+		<div class="footer-row1">
+			<div class="row1-main">
+				<div class="footer-col">
+					<div class="col-title">
+						<h3>CỬA HÀNG NATIONAL DIRECT</h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconmap.png" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>319 C16 Lý Thường Kiệt, Q.11, HCM</p>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconphone.PNG" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>0123 123 4444</p>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-icon ">
+								<img src="Icon/iconmail.png" width="20px" height="20px" alt="iconmap">
+							</div>
+							<div class="col-text-text">
+								<p>nationaldirect@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-text social">
+							<img src="Icon/social.PNG" height="50px" width="180px" alt="anh mang xa hoi">
+						</div>
+						<div class="col-img">
+							<img src="Images/footer-map-world.png" width="270px" alt="map">
+						</div>
+	
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title">
+						<h3> LIÊN KẾT TRANG WEB </h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Tổng quan về cửa hàng National Direct</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Các mẫu sản phẩm chất lượng</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; Tìm kiếm không gian sang trọng tại National Direct</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title">
+						<h3> SẢN PHẨM </h3>
+					</div>
+					<div class="col-content">
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; SANG TRỌNG</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; TIỆN NGHI</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; GIA ĐÌNH</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-text">
+							<div class="col-text-text padding-border">
+								<a href="#">
+									<p>&#10095; BỀN ĐẸP</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="col-title padding">
+						<h3> BỘ SƯU TẬP </h3>
+					</div>
+					<div class="col-content">
+						<div class="footer-img">
+							<img src="Images/ban_1.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst1.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst2.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst3.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bs4.jpg" height="64px" width="64px" alt="anh">
+						</div>
+						<div class="footer-img">
+							<img src="Images/bst5.jpg" height="64px" width="64px" alt="anh">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-row2">
+			<div class="row2-main">
+				<span>Copyright © 2022 National Direct.</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

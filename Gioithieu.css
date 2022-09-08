@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gt-banner {
+	min-height: 200px;
+	max-width: 100%;
+	background-color: #414141;
+	
+}
+.gt-banner-content {
+	height: 200px;
+	width: 1200px;
+	margin: auto;
+	background-color: black;
+}
+.gt-banner-img {
+	height: 200px;
+	width: 1200px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.gt-banner-img img {
+	width: 100%;
+	min-height: 200px;
+	opacity: 0.3;
+	position: relative;
+	bottom: 80px;
+}
+
+.gt-banner-block {
+	height: 200px;
+	width: 1200px;
+	position: absolute;
+	top: 140px;
+	text-align: center;
+	padding: 40px 400px;
+}
+
+.gt-banner-title {
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
+.gt-banner-text {
+	padding: 10px 0px;
+	display: block;
+	font-size: 20px;
+	line-height: 1.6;
+	text-transform: uppercase;
+	font-weight:700; 
+	color: white;
+}
+
+.gt-banner-text a {
+	cursor: pointer;
+	font-weight: normal;
+}
+
+
+
+
+.gt-container {
+	height: 900px;
+	width: 100%;
+}
+
+.gt-content {
+	width: 1200px;
+	height: 1000px;
+	margin: auto;
+}
+
+.gt-row1 {
+	height: 300px;
+	width: 1200px;
+}
+
+.gtrow1-block {
+	height: 300px;
+	width: 400px;;
+	float: left;
+	padding: 0px 30px 30px;
+}
+
+.block-border {
+	border-right: 1px solid #ececec;
+}
+
+.gt-title-block {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.gt-title-block h3 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
+.gt-text-block {
+	text-align: center;
+}
+.gt-text-block P {
+	line-height: 1.6;
+	font-size: 22px;
+	color: #828282;
+}
+
+.gt-row2 {
+	height: 600px;
+	width: 1200px;
+	padding: 20px 50px 20px;
+}
+
+.gt-slideshow {
+	height: 550px;
+	width: 1100px;
+/*	background-color: black;*/
+	position: relative;
+}
+
+.gt-row2 img {
+	vertical-align: middle;
+}
+
+.mySlide {
+	display: none;
+}
+
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0px 9px 9px 0px;
+}
+
+.next {
+	right: 0px;
+	border-radius: 9px 0px 0px 9px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active1, .dot:hover {
+  background-color: #717171;
+}
+.khoang_cach {
+	background-color: #F7F7F7;
+	height: 30px;
+}
+.gt-row3 {
+	height: 500px;
+	width: 1200px;
+	background-color: #F7F7F7;
+	padding: 0px 30px;
+}
+
+.gtrow3-top {
+	height: 100px;
+	width: 1140px;	
+	padding: 25px 0px;
+}
+
+.gtrow3-top-text {
+	height: 50px;
+	
+}
+
+.gtrow3-top h1 {
+	float: left;
+	padding-right: 15px;
+	font-weight: normal;
+	color: #1c1c1c;
+	font-family: Pattaya;
+}
+
+.gtrow3-top p {
+	float: left;
+	padding-left: 15px;
+	border-left: 2px solid #c49244;
+	color: #c49244;
+}
+
+
+.gtrow3-main {
+	height: 350px;
+	width: 1140px;
+}
+
+.gtrow3-block {
+	height: 300px;
+	width: 380px;
+	float: left;
+	padding: 0px 15px;
+}
+
+.gtrow3-block-img {
+	height: 50px;
+}
+
+.gtrow3-block-title {
+	line-height: 50px;
+	margin-bottom: 10px;
+}	
+
+.gtrow3-block-title  h3 {
+	font-weight: 700;
+	font-size: 25px;
+	color: #1c1c1c;
+}
+
+
+.gtrow3-block-text {
+	height: 190px;
+}
+
+.gtrow3-block-text p {
+	margin: 0px;
+	line-height: 1.6;
+	color: #777777;
+}
+		
+
+
+
